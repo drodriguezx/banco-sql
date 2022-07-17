@@ -1,0 +1,13 @@
+//Clientes dependentes// 
+SELECT *
+FROM cliente
+WHERE nome LIKE 'Filho%'
+
+//Clientes reesposáveis dos dependentes// 
+SELECT *
+FROM cliente
+WHERE nome LIKE '%Pai%'
+
+SELECT *
+FROM cliente
+WHERE nome LIKE '%Mãe%'
